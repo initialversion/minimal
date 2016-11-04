@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "notes#index"
   # Routes for the Note resource:
   # CREATE
   get "/notes/new", :controller => "notes", :action => "new"
